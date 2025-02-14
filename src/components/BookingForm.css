@@ -1,0 +1,577 @@
+/* Corrected CSS for BookingForm Component - V4 (Light Styling, Icon Fix, Animations) */
+
+.booking-form-container {
+  width: 100%;
+  max-width: 68rem;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+  font-family: "Arial", sans-serif;
+}
+
+.booking-form-wrapper {
+  background-color: #fefefe; /* Very light off-white */
+  border-radius: 1.75rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Even lighter shadow */
+  overflow: hidden;
+  border: none; /* Removed wrapper border */
+}
+
+.booking-form-content {
+  padding: 2.5rem;
+  max-width: 100%;
+}
+
+.coming-soon {
+  padding: 3rem;
+  text-align: center;
+  color: #a0aec0; /* Even lighter gray for "Coming Soon" */
+  font-size: 1.2rem;
+}
+
+/* Corrected CSS for TransportNav Component - V4 */
+.transport-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fefefe; /* Light background */
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom: none; /* Removed bottom border from nav */
+  padding: 0.5rem 1rem; /* Reduced vertical padding */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); /* Very subtle shadow */
+}
+
+.transport-nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.25rem; /* Adjusted padding */
+  min-width: 90px; /* Slightly reduced min-width */
+  transition: all 0.25s ease-in-out; /* Smoother, slightly slower transition */
+  color: #718096; /* Softer gray text */
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 3px solid transparent; /* Thinner default border */
+  opacity: 0.9; /* Slightly less opaque buttons */
+}
+
+.transport-nav-button:hover {
+  background-color: #f0f2f5; /* Very light gray hover */
+  color: #333;
+  opacity: 1; /* Full opacity on hover */
+}
+
+.transport-nav-button-active {
+  background-color: #ffffff;
+  color: #e53e3e;
+  border-bottom-color: #e53e3e;
+  border-radius: 0;
+  font-weight: 700;
+  opacity: 1; /* Full opacity when active */
+}
+
+.transport-nav-icon {
+  width: 1.6rem; /* Slightly smaller icons */
+  height: 1.6rem;
+  margin-bottom: 0.4rem; /* Reduced bottom margin */
+  color: #718096; /* Softer icon color */
+  transition: color 0.25s ease-in-out; /* Smooth icon color transition */
+}
+
+.transport-nav-button:hover .transport-nav-icon,
+.transport-nav-button-active .transport-nav-icon {
+  color: #e53e3e;
+}
+
+.transport-nav-icon-active {
+  color: #e53e3e;
+}
+
+.transport-nav-text {
+  font-size: 0.95rem; /* Slightly smaller text */
+  font-weight: 600;
+  transition: color 0.25s ease-in-out;
+}
+
+.transport-nav-button:hover .transport-nav-text,
+.transport-nav-button-active .transport-nav-text {
+  color: #222;
+}
+
+/* Corrected CSS for TravellerForm Component - V4 (Lighter, Less Borders) */
+.traveller-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.4rem; /* Reduced margin-top */
+  width: 23rem; /* Slightly less wide */
+  background-color: #fefefe; /* Very light background */
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); /* Lighter shadow */
+  padding: 1.4rem; /* Reduced padding */
+  z-index: 50;
+  font-size: 1rem;
+  border: none; /* Removed TravellerForm border */
+}
+
+.traveller-form-space-y-4 > * + * {
+  margin-top: 1.1rem; /* Reduced spacing */
+}
+
+.traveller-form-title {
+  font-size: 1.05rem; /* Slightly smaller title font */
+  font-weight: 700;
+  color: #444; /* Softer title text */
+  margin-bottom: 0.6rem; /* Reduced margin below title */
+}
+
+.traveller-form-number-buttons {
+  display: flex;
+  gap: 0.6rem; /* Reduced gap */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.traveller-form-number-button {
+  width: 2.4rem; /* Slightly smaller number buttons */
+  height: 2.4rem;
+  border-radius: 0.4rem; /* Slightly less rounded buttons */
+  background-color: #f9fafb; /* Even lighter background */
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none; /* Removed number button border */
+  color: #555; /* Softer number color */
+}
+
+.traveller-form-number-button:hover {
+  background-color: #f0f2f5; /* Very light gray hover */
+  color: #333; /* Darker text on hover */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Added inset shadow on hover */
+}
+
+.traveller-form-number-button-active {
+  background-color: #e53e3e;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added subtle shadow when active */
+}
+
+.traveller-form-class-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* Reduced gap */
+}
+.traveller-form-class-buttons > * + * {
+  margin-top: 0.6rem;
+}
+
+.traveller-form-class-button {
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 1rem; /* Adjusted padding */
+  border-radius: 0.4rem; /* Slightly less rounded class buttons */
+  background-color: #f9fafb; /* Even lighter background */
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none; /* Removed class button border */
+  color: #555; /* Softer class text color */
+}
+
+.traveller-form-class-button:hover {
+  background-color: #f0f2f5;
+  color: #333; /* Darker text on hover */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Added inset shadow on hover */
+}
+
+.traveller-form-class-button-active {
+  background-color: #e53e3e;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added subtle shadow when active */
+}
+
+.traveller-form-done-button {
+  width: 100%;
+  background-color: #e53e3e;
+  color: white;
+  padding: 0.6rem 1rem; /* Adjusted padding */
+  border-radius: 0.4rem; /* Slightly less rounded done button */
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none; /* Removed done button border */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.traveller-form-done-button:hover {
+  background-color: #c02d2d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Corrected CSS for TravellerForm Component - V5 (Fix for Cut-off Issue) */
+.traveller-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.4rem;
+  width: 23rem;
+  background-color: #fefefe;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  padding: 1.4rem;
+  z-index: 50;
+  font-size: 1rem;
+  border: none;
+  overflow: visible; /* **ADD THIS LINE: Ensure content is visible even if it overflows** */
+  clip-path: inset(
+    0px -20px -20px -20px
+  ); /* Optional: Prevent shadow clipping */
+}
+
+.traveller-form-space-y-4 > * + * {
+  margin-top: 1.1rem;
+}
+
+.traveller-form-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 0.6rem;
+}
+
+.traveller-form-number-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.traveller-form-number-button {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  background-color: #f9fafb;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  color: #555;
+}
+
+.traveller-form-number-button:hover {
+  background-color: #f0f2f5;
+  color: #333;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.traveller-form-number-button-active {
+  background-color: #e53e3e;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.traveller-form-class-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.traveller-form-class-buttons > * + * {
+  margin-top: 0.6rem;
+}
+
+.traveller-form-class-button {
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  background-color: #f9fafb;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  color: #555;
+}
+
+.traveller-form-class-button:hover {
+  background-color: #f0f2f5;
+  color: #333;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.traveller-form-class-button-active {
+  background-color: #e53e3e;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.traveller-form-done-button {
+  width: 100%;
+  background-color: #e53e3e;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.traveller-form-done-button:hover {
+  background-color: #c02d2d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* flight-form-traveller-selector-relative - Minor adjustment */
+.flight-form-traveller-selector-relative {
+  position: relative;
+  overflow: visible; /* **ADD THIS LINE: Ensure dropdown is not clipped by this container** */
+}
+/* Corrected CSS for FlightForm Component - V4 (Light, Animated, Center Icon) */
+.flight-form-space-y-6 > * + * {
+  margin-top: 2rem; /* Reduced spacing */
+}
+
+.flight-form-radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1rem; /* Reduced margin-bottom */
+}
+
+.flight-form-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* Reduced gap */
+  font-size: 1.15rem; /* Slightly smaller radio label text */
+  color: #333;
+  font-weight: 600;
+}
+
+.flight-form-radio-input {
+  color: #e53e3e;
+  width: 1.1rem; /* Slightly smaller radio input */
+  height: 1.1rem;
+  border-width: 1.5px;
+}
+
+.flight-form-location-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 1.25rem; /* Reduced gap */
+  padding: 1.5rem; /* Reduced padding */
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); /* Even lighter shadow */
+  margin-bottom: 1.5rem; /* Reduced margin-bottom */
+}
+
+.flight-form-location-title {
+  font-size: 1.6rem; /* Slightly smaller location title */
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.1rem; /* Further reduced margin below title */
+}
+
+.flight-form-location-desc {
+  color: #666; /* Softer description text */
+  font-size: 1rem; /* Slightly smaller description font */
+}
+
+.flight-form-location-input {
+  width: 100%;
+  padding: 0.8rem; /* Reduced input padding */
+  border: none; /* Removed input border */
+  border-radius: 0.5rem;
+  font-size: 1.05rem; /* Slightly smaller input font */
+  color: #444; /* Softer input text */
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Even lighter inset shadow */
+  background-color: #f9f9f9; /* Even lighter input background */
+  transition: box-shadow 0.2s ease-in-out; /* Smooth shadow transition */
+}
+
+.flight-form-location-input:focus {
+  border-color: #b0bec5;
+  box-shadow: 0 0 0 2px rgba(176, 190, 204, 0.2); /* Lighter focus shadow */
+}
+
+.flight-form-swap-button {
+  padding: 0.6rem; /* Reduced padding */
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out; /* Smooth transition for all properties */
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Even lighter shadow for swap button */
+  opacity: 0.8; /* Slightly less opaque swap button */
+}
+
+.flight-form-swap-button:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Lighter hover shadow */
+  transform: scale(1.05); /* Slight scale up on hover */
+  opacity: 1; /* Full opacity on hover */
+}
+
+.flight-form-swap-icon {
+  width: 1.4rem; /* Slightly smaller icon */
+  height: 1.4rem;
+  color: #666; /* Softer swap icon color */
+}
+
+.flight-form-date-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.flight-form-date-picker-container {
+  padding: 1rem; /* Reduced padding */
+  border: none; /* Removed border from date picker container */
+  border-radius: 0.625rem;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Even lighter inset shadow */
+}
+
+.flight-form-date-label {
+  font-size: 1rem;
+  color: #444;
+  display: block;
+  margin-bottom: 0.5rem; /* Reduced margin below label */
+}
+
+.flight-form-date-input {
+  width: 100%;
+  padding: 0.7rem; /* Reduced input padding */
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.flight-form-date-input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.flight-form-traveller-selector-relative {
+  position: relative;
+}
+
+.flight-form-traveller-selector-button {
+  width: 100%;
+  padding: 1rem; /* Reduced padding */
+  border: none; /* Removed button border */
+  border-radius: 0.625rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Even lighter inset shadow */
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth shadow and border transition */
+}
+
+.flight-form-traveller-selector-button:focus {
+  outline: none;
+  border-color: #b0bec5;
+  box-shadow: 0 0 0 2px rgba(176, 190, 204, 0.2); /* Lighter focus shadow */
+}
+
+.flight-form-traveller-desc {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.4rem; /* Reduced margin */
+}
+
+.flight-form-extra-savings-badge {
+  display: inline-block;
+  background-color: #38a169;
+  color: white;
+  font-size: 0.85rem; /* Slightly smaller badge text */
+  padding: 0.4rem 0.6rem; /* Adjusted badge padding */
+  border-radius: 0.375rem;
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.flight-form-fare-options {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem; /* Reduced margin */
+  justify-content: center;
+}
+
+.flight-form-fare-button {
+  padding: 0.7rem 1.1rem; /* Adjusted padding */
+  border-radius: 0.5rem;
+  border: none; /* Removed fare button border */
+  transition: all 0.2s ease-in-out;
+  font-size: 0.95rem; /* Slightly smaller fare button text */
+  background-color: #f9f9f9; /* Even lighter background */
+  color: #555;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04); /* Very subtle shadow */
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.flight-form-fare-button:hover {
+  border-color: #9ca3af;
+  background-color: #f0f0f0;
+  color: #222;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slightly stronger hover shadow */
+}
+
+.flight-form-fare-button-active {
+  border-color: #e53e3e;
+  background-color: #fce8e8;
+  color: #e53e3e;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow when active */
+}
+
+.flight-form-fare-label {
+  font-size: 0.95rem; /* Slightly smaller label font */
+  font-weight: 500;
+}
+
+.flight-form-fare-subtext {
+  font-size: 0.85rem; /* Slightly smaller subtext font */
+  color: #777;
+}
+
+.flight-form-search-button {
+  padding: 0.9rem 2.75rem; /* Adjusted padding */
+  background-color: #e53e3e;
+  color: white;
+  font-size: 1.1rem; /* Slightly smaller button text */
+  font-weight: 700;
+  border-radius: 0.625rem; /* More rounded search button */
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.12); /* Lighter shadow */
+  letter-spacing: 0.04em;
+}
+
+.flight-form-search-button:hover {
+  background-color: #c02d2d;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.18); /* Slightly stronger shadow on hover */
+  transform: scale(1.01); /* Even more subtle scale up on hover */
+}
+
+.flight-form-location-grid > button.flight-form-swap-button {
+  justify-self: center; /* Center swap button in grid */
+  opacity: 0.9; /* Slightly less opaque swap button */
+}

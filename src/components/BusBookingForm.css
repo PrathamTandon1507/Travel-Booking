@@ -1,0 +1,122 @@
+/* HorizontalBusBookingForm.css */
+
+.bus-booking-form-container {
+  padding: 1.5rem; /* Slightly more padding */
+  border-radius: 0.5rem;
+}
+
+.bus-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto; /* 3 fields + search */
+  gap: 1.5rem; /* Increased gap for horizontal layout */
+  align-items: flex-end;
+}
+
+.bus-form-group {
+  margin-bottom: 0; /* Reset vertical margin */
+}
+
+.bus-form-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.bus-form-input,
+.bus-form-date-picker-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #374151;
+  outline: none;
+  background-color: white; /* Ensure white background for input fields */
+}
+
+.bus-form-input:focus,
+.bus-form-date-picker-input:focus {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.2);
+}
+
+.bus-form-search-button-container {
+  grid-column: span 1; /* Occupy last column */
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+}
+
+.bus-form-search-button {
+  padding: 0.75rem 1.5rem; /* Adjusted padding */
+  background-color: #ef4444;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.bus-form-search-button:hover {
+  background-color: #dc2626;
+}
+/* HorizontalBusBookingForm.css */
+
+.bus-booking-form-container {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: relative; /* Add position relative */
+  padding-bottom: 3rem; /* Add padding at the bottom to accommodate the button */
+}
+
+.bus-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 0; /* Remove margin-bottom from grid */
+}
+
+/* ... (rest of bus-form-group, bus-form-label, bus-form-input, bus-form-date-picker-input styles - keep them) ... */
+
+.bus-form-search-button-container {
+  position: absolute; /* Change to absolute positioning */
+  bottom: -1.5rem; /* Adjust bottom to control overlap - negative value moves it up */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center precisely */
+  width: auto; /* Let button width be determined by content */
+  right: auto; /* Reset right if set before */
+  display: block; /* Ensure button takes full available width */
+  text-align: center; /* Center text inside the button */
+}
+
+.bus-form-search-button {
+  position: absolute;
+  top: -25px;
+  right: -60px;
+  padding: 0.75rem 2rem; /* Adjust horizontal padding to look centered */
+  background-color: #ef4444;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  display: inline-block; /* Important: Make button inline-block for centering */
+}
+
+.bus-form-search-button:hover {
+  background-color: #dc2626;
+}

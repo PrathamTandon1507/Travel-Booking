@@ -1,0 +1,122 @@
+/* CabBookingForm.css */
+
+.cab-booking-form-container {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.cab-form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) auto; /* 4 fields + search */
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.cab-form-group {
+  margin-bottom: 0;
+}
+
+.cab-form-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.cab-form-input,
+.cab-form-date-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #374151;
+  outline: none;
+  background-color: white;
+}
+
+.cab-form-input:focus,
+.cab-form-date-input:focus {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.2);
+}
+
+.cab-form-search-button-container {
+  grid-column: span 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+}
+
+.cab-form-search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ef4444;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.cab-form-search-button:hover {
+  background-color: #dc2626;
+}
+/* CabBookingForm.css */
+
+.cab-booking-form-container {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: relative; /* Add position relative */
+  padding-bottom: 3rem; /* Add padding at the bottom */
+}
+
+.cab-form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 0; /* Remove margin-bottom from grid */
+}
+
+/* ... (rest of cab-form-group, cab-form-label, cab-form-input, cab-form-date-input styles - keep them) ... */
+
+.cab-form-search-button-container {
+  position: absolute; /* Change to absolute positioning */
+  bottom: -1.5rem; /* Adjust bottom to control overlap */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center precisely */
+  width: auto; /* Let button width be determined by content */
+  right: auto; /* Reset right if set before */
+  display: block; /* Ensure button takes full available width */
+  text-align: center; /* Center text inside the button */
+}
+
+.cab-form-search-button {
+  position: absolute;
+  top: -25px;
+  right: -70px;
+  padding: 0.75rem 2rem; /* Adjusted padding */
+  background-color: #ef4444;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  display: inline-block; /* Make button inline-block */
+}
+
+.cab-form-search-button:hover {
+  background-color: #dc2626;
+}

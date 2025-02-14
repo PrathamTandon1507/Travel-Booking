@@ -1,0 +1,111 @@
+[
+  {
+    "id": 301,
+    "type": "train",
+    "trainName": "Shatabdi Express",
+    "trainNumber": "12001",
+    "departureStation": "Mumbai",
+    "arrivalStation": "Pune",
+    "departureTime": "06:00 AM",
+    "arrivalTime": "09:05 AM",
+    "duration": "3h 5m",
+    "classes": ["AC First Class", "AC Chair Car"],
+    "price": {
+      "AC First Class": 1800,
+      "AC Chair Car": 1200
+    },
+    "availability": {
+      "AC First Class": 10,
+      "AC Chair Car": 25
+    },
+    "features": ["AC", "Chair Car", "Meals Included", "WiFi"]
+  },
+  {
+    "id": 302,
+    "type": "train",
+    "trainName": "Deccan Queen",
+    "trainNumber": "12123",
+    "departureStation": "Mumbai",
+    "arrivalStation": "Pune",
+    "departureTime": "05:10 PM",
+    "arrivalTime": "08:25 PM",
+    "duration": "3h 15m",
+    "classes": ["AC Chair Car", "Second Sitting"],
+    "price": {
+      "AC Chair Car": 1100,
+      "Second Sitting": 450
+    },
+    "availability": {
+      "AC Chair Car": 12,
+      "Second Sitting": 50
+    },
+    "features": ["Chair Car", "Second Sitting", "On-board Catering"]
+  },
+  {
+    "id": 303,
+    "type": "train",
+    "trainName": "Intercity Express",
+    "trainNumber": "12125",
+    "departureStation": "Pune",
+    "arrivalStation": "Mumbai",
+    "departureTime": "11:30 AM",
+    "arrivalTime": "02:45 PM",
+    "duration": "3h 15m",
+    "classes": ["AC Chair Car", "Second Sitting"],
+    "price": {
+      "AC Chair Car": 1150,
+      "Second Sitting": 480
+    },
+    "availability": {
+      "AC Chair Car": 8,
+      "Second Sitting": 40
+    },
+    "features": ["Chair Car", "Second Sitting", "Reserved Seating"]
+  },
+  {
+    "id": 304,
+    "type": "train",
+    "trainName": "Rajdhani Express",
+    "trainNumber": "12301",
+    "departureStation": "Delhi",
+    "arrivalStation": "Mumbai",
+    "departureTime": "04:55 PM",
+    "arrivalTime": "08:30 AM",
+    "duration": "15h 35m",
+    "classes": ["AC First Class", "AC 2 Tier", "AC 3 Tier"],
+    "price": {
+      "AC First Class": 4500,
+      "AC 2 Tier": 3200,
+      "AC 3 Tier": 2500
+    },
+    "availability": {
+      "AC First Class": 5,
+      "AC 2 Tier": 15,
+      "AC 3 Tier": 20
+    },
+    "features": ["AC", "Sleeper", "Meals", "Premium Service"]
+  },
+  {
+    "id": 305,
+    "type": "train",
+    "trainName": "Duronto Express",
+    "trainNumber": "12201",
+    "departureStation": "Mumbai",
+    "arrivalStation": "Delhi",
+    "departureTime": "11:00 PM",
+    "arrivalTime": "03:30 PM",
+    "duration": "16h 30m",
+    "classes": ["AC First Class", "AC 2 Tier", "AC 3 Tier"],
+    "price": {
+      "AC First Class": 4700,
+      "AC 2 Tier": 3400,
+      "AC 3 Tier": 2700
+    },
+    "availability": {
+      "AC First Class": 8,
+      "AC 2 Tier": 20,
+      "AC 3 Tier": 30
+    },
+    "features": ["AC", "Sleeper", "Non-stop", "Meals Included"]
+  }
+]

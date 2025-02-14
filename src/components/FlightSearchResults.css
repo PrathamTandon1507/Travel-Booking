@@ -1,0 +1,131 @@
+/* FlightSearchResults.css (Updated with Filter Styles) */
+
+.flight-search-results-container {
+  display: flex;
+  max-width: 100%;
+  padding: 2rem;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+.filters-sidebar {
+  width: 250px;
+  margin-right: 30px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.filters-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+  color: #666;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.results-content {
+  flex: 1;
+}
+
+.search-info {
+  background-color: #e0f7fa;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.search-info strong {
+  color: #007bff;
+}
+
+.flight-results h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+.flight-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.flight-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.flight-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.flight-details h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  color: #2d3e52;
+  font-weight: bold;
+}
+
+.flight-details p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.flight-price-book {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  color: #2d3e52;
+  margin-bottom: 0.5rem;
+}
+
+.book-now-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.book-now-button:hover {
+  background-color: #0056b3;
+}
