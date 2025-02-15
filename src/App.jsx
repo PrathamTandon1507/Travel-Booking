@@ -9,6 +9,7 @@ import CabSearchResults from "./components/CabSearchResults";
 import TrainSearchResults from "./components/TrainSearchResults";
 import FlightSearchResults from "./components/FlightSearchResults";
 import Services from "./components/Services";
+import Paypage from "./components/Paypage";
 // import { HomePage } from "./HomePage";
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
         <Route path="/" element={<BusBookingForm />} />
         <Route path="/" element={<CabBookingForm />} />
         <Route path="/" element={<TrainBookingForm />} />
-
         <Route path="/train-search-results" element={<TrainSearchResults />} />
         <Route path="/bus-search-results" element={<BusSearchResults />} />
         <Route path="/cab-search-results" element={<CabSearchResults />} />
@@ -28,6 +28,8 @@ function App() {
           path="/flight-search-results"
           element={<FlightSearchResults />}
         />
+        <Route path="/pay" element={<Paypage />} />{" "}
+        {/* **Add the /pay route** */}
       </Routes>
       <Services />
     </BrowserRouter>

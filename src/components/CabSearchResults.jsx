@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./CabSearchResults.css";
 import cabDataJson from "./cab_data.json";
 
@@ -9,6 +9,7 @@ export default function CabSearchResults() {
   const [cabData, setCabData] = useState(cabDataJson);
   const [filteredCabData, setFilteredCabData] = useState([]);
   const [cabTypeFilters, setCabTypeFilters] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Initial filtering based on search parameters
@@ -113,7 +114,8 @@ export default function CabSearchResults() {
               )}
               {searchParams.departureDate && (
                 <span>
-                  <strong>Date:</strong> {searchParams.departureDate}&nbsp;&nbsp;&nbsp;
+                  <strong>Date:</strong> {searchParams.departureDate}
+                  &nbsp;&nbsp;&nbsp;
                 </span>
               )}
               {searchParams.pickupTime && (
@@ -146,7 +148,14 @@ export default function CabSearchResults() {
                 </div>
                 <div className="cab-price-book">
                   <p className="price">₹ {cab.price}</p>
-                  <button className="book-now-button">BOOK NOW</button>
+                  <button
+                    className="book-now-button"
+                    onClick={() =>
+                      navigate("/pay", { state: { price: cab.price } })
+                    } // Pass price in state - CORRECT WAY
+                  >
+                    BOOK NOW
+                  </button>
                 </div>
               </div>
             ))}

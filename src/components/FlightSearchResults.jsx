@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./FlightSearchResults.css";
 import flightDataJson from "./flight_data.json";
 
@@ -9,6 +9,7 @@ export default function FlightSearchResults() {
   const [flightData, setFlightData] = useState(flightDataJson);
   const [filteredFlightOffers, setFilteredFlightOffers] = useState([]);
   const [airlineFilters, setAirlineFilters] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Initial filtering based on search parameters
@@ -177,7 +178,14 @@ export default function FlightSearchResults() {
                 </div>
                 <div className="flight-price-book">
                   <p className="price">₹ {flight.price}</p>
-                  <button className="book-now-button">BOOK NOW</button>
+                  <button
+                    className="book-now-button"
+                    onClick={() =>
+                      navigate("/pay", { state: { price: flight.price } })
+                    } // Pass price in state - CORRECT WAY
+                  >
+                    BOOK NOW
+                  </button>
                 </div>
               </div>
             ))}

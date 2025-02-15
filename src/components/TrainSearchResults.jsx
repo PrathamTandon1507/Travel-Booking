@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./TrainSearchResults.css";
 import trainDataJson from "./train_data.json";
 
@@ -9,6 +9,7 @@ export default function TrainSearchResults() {
   const [trainData, setTrainData] = useState(trainDataJson);
   const [filteredTrainData, setFilteredTrainData] = useState([]);
   const [classFilters, setClassFilters] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Initial filtering based on search parameters
@@ -163,7 +164,14 @@ export default function TrainSearchResults() {
                   <p className="price">
                     ₹ {train.price && train.price[train.classes?.[0]]} onwards
                   </p>
-                  <button className="book-now-button">BOOK NOW</button>
+                  <button
+                    className="book-now-button"
+                    onClick={() =>
+                      navigate("/pay", { state: { price: train.price } })
+                    } // Pass price in state - CORRECT WAY
+                  >
+                    BOOK NOW
+                  </button>
                 </div>
               </div>
             ))}

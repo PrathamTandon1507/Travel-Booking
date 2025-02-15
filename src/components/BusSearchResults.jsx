@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
 import "./BusSearchResults.css";
 import busDataJson from "./bus_data.json";
 
 export default function BusSearchResults() {
   const location = useLocation();
+  const navigate = useNavigate(); // Initialize useNavigate hook
   const searchParams = location.state?.searchParams || {}; // Access search parameters from state
   const [busData, setBusData] = useState(busDataJson);
   const [filteredBusData, setFilteredBusData] = useState([]);
@@ -92,24 +93,21 @@ export default function BusSearchResults() {
               {searchParams.fromCity && (
                 <span>
                   <strong>From City:</strong> {searchParams.fromCity}
-                  &nbsp;&nbsp;&nbsp;
                 </span>
               )}
               {searchParams.toCity && (
                 <span>
                   <strong>To City:</strong> {searchParams.toCity}
-                  &nbsp;&nbsp;&nbsp;
                 </span>
               )}
               {searchParams.date && (
                 <span>
-                  <strong>Date:</strong> {searchParams.date}&nbsp;&nbsp;&nbsp;
+                  <strong>Date:</strong> {searchParams.date}
                 </span>
               )}
               {searchParams.travelClass && (
                 <span>
                   <strong>Class:</strong> {searchParams.travelClass}
-                  &nbsp;&nbsp;&nbsp;
                 </span>
               )}
             </div>
@@ -135,7 +133,14 @@ export default function BusSearchResults() {
                 </div>
                 <div className="bus-price-book">
                   <p className="price">₹ {bus.price}</p>
-                  <button className="book-now-button">BOOK NOW</button>
+                  <button
+                    className="book-now-button"
+                    onClick={() =>
+                      navigate("/pay", { state: { price: bus.price } })
+                    } // Pass price in state - CORRECT WAY
+                  >
+                    BOOK NOW
+                  </button>
                 </div>
               </div>
             ))}
