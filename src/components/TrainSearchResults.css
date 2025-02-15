@@ -24,6 +24,10 @@
   color: #333;
 }
 
+.filters-section {
+  font-weight: bold;
+}
+
 .filter-group {
   margin-bottom: 1.5rem;
 }
@@ -46,18 +50,61 @@
 .results-content {
   flex: 1;
 }
-
 .search-info {
-  background-color: #e0f7fa;
-  padding: 1rem 1.5rem;
+  /* Subtle gradient background */
+  background: linear-gradient(to right, #2563eb, #7e22ce);
+  padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: #fff; /* Changed to white for better contrast on gradient */
   font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.search-info strong {
-  color: #007bff;
+.search-info-box {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  max-width: 600px;
+  margin: 0.5rem auto; /* Reduced margin */
+  font-family: sans-serif;
+  color: #333;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Heading style */
+.search-info h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a71e2;
+}
+
+/* Remove default list styles and spacing */
+.search-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items spacing and alignment */
+.search-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Bold labels for each field */
+.search-info li strong {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.search-info p {
+  color: white;
 }
 
 .train-results h2 {
@@ -116,7 +163,7 @@
 }
 
 .book-now-button {
-  background-color: #007bff;
+  background-color: red;
   color: white;
   border: none;
   padding: 0.75rem 1.25rem;

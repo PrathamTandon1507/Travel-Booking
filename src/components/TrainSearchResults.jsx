@@ -109,13 +109,34 @@ export default function TrainSearchResults() {
       </aside>
       <main className="results-content">
         <section className="search-info">
-          <p>
-            Showing trains for:
-            {searchParams.fromCity && ` From City: ${searchParams.fromCity}`}
-            {searchParams.toCity && ` To City: ${searchParams.toCity}`}
-            {searchParams.date && ` Date: ${searchParams.date}`}
-            {searchParams.travelClass && ` Class: ${searchParams.travelClass}`}
-          </p>
+          <div className="search-info-box">
+            <h2>Showing trains for:</h2>
+            <div>
+              {searchParams.fromCity && (
+                <span>
+                  <strong>From City:</strong> {searchParams.fromCity}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.toCity && (
+                <span>
+                  <strong>To City:</strong> {searchParams.toCity}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.date && (
+                <span>
+                  <strong>Date:</strong> {searchParams.date}&nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.travelClass && (
+                <span>
+                  <strong>Class:</strong> {searchParams.travelClass}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+            </div>
+          </div>
         </section>
 
         <section className="train-results">

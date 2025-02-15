@@ -86,12 +86,34 @@ export default function BusSearchResults() {
       <main className="results-content">
         {/* Search Information for Buses */}
         <section className="search-info">
-          <p>
-            Showing buses for:
-            {searchParams.fromCity && ` From City: ${searchParams.fromCity}`}
-            {searchParams.toCity && ` To City: ${searchParams.toCity}`}
-            {searchParams.date && ` Date: ${searchParams.date}`}
-          </p>
+          <div className="search-info-box">
+            <h2>Showing buses for:</h2>
+            <div>
+              {searchParams.fromCity && (
+                <span>
+                  <strong>From City:</strong> {searchParams.fromCity}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.toCity && (
+                <span>
+                  <strong>To City:</strong> {searchParams.toCity}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.date && (
+                <span>
+                  <strong>Date:</strong> {searchParams.date}&nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.travelClass && (
+                <span>
+                  <strong>Class:</strong> {searchParams.travelClass}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+            </div>
+          </div>
         </section>
 
         {/* Bus Results Section */}

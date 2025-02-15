@@ -1,18 +1,14 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import "./Services.css";
 
 export default function Services() {
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], ["-25%", "25%"]);
-
   return (
     <motion.div
       className="services"
       style={{
         backgroundImage:
           "url('https://cdn.britannica.com/54/237654-050-9DD5E536/Macro-image-of-all-major-credit-card-companies.jpg')",
-        backgroundAttachment: "fixed",
-        backgroundPosition: y,
+        backgroundPosition: "center",
         backgroundSize: "cover",
         height: "400px",
         overflow: "hidden",

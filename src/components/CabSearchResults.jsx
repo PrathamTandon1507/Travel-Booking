@@ -96,19 +96,34 @@ export default function CabSearchResults() {
       <main className="results-content">
         {/* Search Information for Cabs */}
         <section className="search-info">
-          <p>
-            Showing cabs for:
-            {searchParams.fromLocation &&
-              ` From City: ${searchParams.fromLocation}`}{" "}
-            {/* Updated label to "From City" */}
-            {searchParams.toLocation &&
-              ` To City: ${searchParams.toLocation}`}{" "}
-            {/* Updated label to "To City" */}
-            {searchParams.departureDate &&
-              ` Departure Date: ${searchParams.departureDate}`}
-            {searchParams.pickupTime &&
-              ` Pickup Time: ${searchParams.pickupTime}`}
-          </p>
+          <div className="search-info-box">
+            <h2>Showing cabs for:</h2>
+            <div>
+              {searchParams.fromLocation && (
+                <span>
+                  <strong>From City:</strong> {searchParams.fromLocation}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.toLocation && (
+                <span>
+                  <strong>To City:</strong> {searchParams.toLocation}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.departureDate && (
+                <span>
+                  <strong>Date:</strong> {searchParams.departureDate}&nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+              {searchParams.pickupTime && (
+                <span>
+                  <strong>Pickup Time:</strong> {searchParams.pickupTime}
+                  &nbsp;&nbsp;&nbsp;
+                </span>
+              )}
+            </div>
+          </div>
         </section>
 
         {/* Cab Results Section */}
