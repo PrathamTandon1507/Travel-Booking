@@ -18,7 +18,7 @@ export default function Services() {
         overflow: "hidden",
       }}
     >
-      <h4>Our Booking Services</h4>
+      <span>Our Booking Services</span>
       <div className="service-box">
         <div className="service-div">
           <h6>Flight & Transport Booking</h6>

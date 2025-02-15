@@ -107,5 +107,124 @@
       "AC 3 Tier": 30
     },
     "features": ["AC", "Sleeper", "Non-stop", "Meals Included"]
+  },
+  {
+    "id": 306,
+    "type": "train",
+    "trainName": "Garib Rath Express",
+    "trainNumber": "12909",
+    "departureStation": "Mumbai",
+    "arrivalStation": "Delhi",
+    "departureTime": "05:30 PM",
+    "arrivalTime": "09:40 AM",
+    "duration": "16h 10m",
+    "classes": ["AC 3 Tier"],
+    "price": {
+      "AC 3 Tier": 1900
+    },
+    "availability": {
+      "AC 3 Tier": 50
+    },
+    "features": ["AC 3 Tier", "Budget Friendly", "Meals (Chargeable)"]
+  },
+  {
+    "id": 307,
+    "type": "train",
+    "trainName": "Karnataka Express",
+    "trainNumber": "12627",
+    "departureStation": "Bangalore",
+    "arrivalStation": "Delhi",
+    "departureTime": "07:20 PM",
+    "arrivalTime": "06:40 AM (Day 3)",
+    "duration": "35h 20m",
+    "classes": ["AC First Class", "AC 2 Tier", "AC 3 Tier", "Sleeper"],
+    "price": {
+      "AC First Class": 5200,
+      "AC 2 Tier": 3700,
+      "AC 3 Tier": 2700,
+      "Sleeper": 800
+    },
+    "availability": {
+      "AC First Class": 4,
+      "AC 2 Tier": 10,
+      "AC 3 Tier": 25,
+      "Sleeper": 60
+    },
+    "features": ["Long Distance", "Sleeper", "Meals Included"]
+  },
+  {
+    "id": 308,
+    "type": "train",
+    "trainName": "Chennai Express",
+    "trainNumber": "12651",
+    "departureStation": "Chennai",
+    "arrivalStation": "Mumbai",
+    "departureTime": "02:30 PM",
+    "arrivalTime": "05:50 AM",
+    "duration": "15h 20m",
+    "classes": ["AC First Class", "AC 2 Tier", "AC 3 Tier", "Sleeper"],
+    "price": {
+      "AC First Class": 4900,
+      "AC 2 Tier": 3400,
+      "AC 3 Tier": 2500,
+      "Sleeper": 700
+    },
+    "availability": {
+      "AC First Class": 6,
+      "AC 2 Tier": 12,
+      "AC 3 Tier": 30,
+      "Sleeper": 80
+    },
+    "features": ["Sleeper", "AC", "Meals Included"]
+  },
+  {
+    "id": 309,
+    "type": "train",
+    "trainName": "Howrah Mail",
+    "trainNumber": "12809",
+    "departureStation": "Kolkata",
+    "arrivalStation": "Mumbai",
+    "departureTime": "08:20 PM",
+    "arrivalTime": "10:45 AM (Day 2)",
+    "duration": "26h 25m",
+    "classes": ["AC First Class", "AC 2 Tier", "AC 3 Tier", "Sleeper"],
+    "price": {
+      "AC First Class": 5500,
+      "AC 2 Tier": 3800,
+      "AC 3 Tier": 2700,
+      "Sleeper": 850
+    },
+    "availability": {
+      "AC First Class": 5,
+      "AC 2 Tier": 15,
+      "AC 3 Tier": 40,
+      "Sleeper": 100
+    },
+    "features": ["Long Distance", "AC", "Pantry Car Available"]
+  },
+  {
+    "id": 310,
+    "type": "train",
+    "trainName": "Jodhpur Express",
+    "trainNumber": "12480",
+    "departureStation": "Delhi",
+    "arrivalStation": "Jodhpur",
+    "departureTime": "11:30 PM",
+    "arrivalTime": "06:50 AM",
+    "duration": "7h 20m",
+    "classes": ["AC First Class", "AC 2 Tier", "AC 3 Tier", "Sleeper"],
+    "price": {
+      "AC First Class": 3200,
+      "AC 2 Tier": 2400,
+      "AC 3 Tier": 1800,
+      "Sleeper": 600
+    },
+    "availability": {
+      "AC First Class": 7,
+      "AC 2 Tier": 18,
+      "AC 3 Tier": 35,
+      "Sleeper": 70
+    },
+    "features": ["Overnight Journey", "Sleeper", "Meals Available"]
   }
 ]

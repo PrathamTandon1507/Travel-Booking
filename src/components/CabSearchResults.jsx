@@ -6,7 +6,7 @@ import cabDataJson from "./cab_data.json";
 export default function CabSearchResults() {
   const location = useLocation();
   const searchParams = location.state?.searchParams || {}; // Access search parameters from state
-  const [cabData, setCabData] = useState(cabDataJson);
+  //   const [cabData, setCabData] = useState(cabDataJson);
   const [filteredCabData, setFilteredCabData] = useState([]);
   const [cabTypeFilters, setCabTypeFilters] = useState([]);
 

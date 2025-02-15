@@ -48,7 +48,7 @@
 }
 
 .search-info {
-  background-color: #e0f7fa;
+  background-color: #080c0c;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
@@ -57,7 +57,7 @@
 }
 
 .search-info strong {
-  color: #007bff;
+  color: #ff0000;
 }
 
 .cab-results h2 {
@@ -116,7 +116,7 @@
 }
 
 .book-now-button {
-  background-color: #007bff;
+  background-color: #ff0000;
   color: white;
   border: none;
   padding: 0.75rem 1.25rem;
