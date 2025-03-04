@@ -5,7 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./BusBookingForm.css";
 import { useNavigate } from "react-router-dom";
 
-// Sample cities array (replace with your actual data or API call)
 const cities = [
   "Delhi",
   "Mumbai",

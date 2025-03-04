@@ -18,7 +18,6 @@ import CabBookingForm from "./CabBookingForm";
 import flightDataJson from "./flight_data.json";
 
 /* eslint-disable react/prop-types */
-// TransportNav Component
 const TransportNav = ({ activeTab, onTabChange }) => {
   const tabs = [
     { id: "Flights", icon: Plane },
@@ -111,7 +110,6 @@ const TravellerForm = ({ onApply, initialValues }) => {
   );
 };
 
-// FlightForm Component
 const FlightForm = () => {
   const [tripType, setTripType] = useState("round-trip");
   const [showTravellerForm, setShowTravellerForm] = useState(false);
@@ -163,7 +161,6 @@ const FlightForm = () => {
     <div className="app-container">
       <div className="flight-form-space-y-6">
         <form onSubmit={handleSearchFlights}>
-          {/* ... (rest of the FlightForm JSX - no changes needed in JSX itself) ... */}
           <div className="flight-form-radio-group">
             {["one-way", "round-trip", "multi-stop"].map((type) => (
               <label key={type} className="flight-form-radio-label">
